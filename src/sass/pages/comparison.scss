@@ -1,0 +1,139 @@
+.desc_name {
+  // Style for "2 евро 201"
+  color: $head;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.33;
+  font-family: $PTSerif;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.table_item {
+
+  border: 1px solid #ccefc9;
+  background-color: $yellow3;
+  margin: 5px;
+  padding: rem(30) rem(35) rem(24);
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  border-radius: 7px;
+  .price, .discount-price  {
+    display: none;
+  }
+  .uni-button {
+    display: none;
+  }
+}
+.differences_table {
+  margin-bottom: 40px;
+  max-width: 100%;
+  overflow-x: auto;
+  table {
+    border-collapse: collapse;
+  }
+  td {
+
+  }
+  tr:nth-child(1) {
+    border-radius: 7px;
+    background-color: $lgreen;
+  }
+  .image {
+    text-align: center;
+  }
+}
+.remove_item {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  .delete {
+    border-radius: 5px;
+    border: 1px solid #eac301;
+    background-color: $yellow2;
+    background-image: url(../images/close-black.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 31px;
+    height: 31px;
+    display: block;
+    &:hover {
+      border: 1px solid #eac301;
+      background-color: #ffd400;
+    }
+  }
+}
+.preview {
+  vertical-align: top;
+  background-color:  #f2f2f2;
+  padding: rem(18) rem(23);
+  position: relative;
+
+  .btn {
+    display: block;
+    text-align: center;
+    margin-bottom: 14px;
+    padding: rem(15) 3px;
+    font-size: 14px;
+  }
+}
+.preview__inner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction:column;
+
+  padding: rem(18) rem(23);
+}
+.properties {
+  display: none;
+}
+.prop_name {
+  background-color: #f2f2f2;
+  color: #3e3e3e;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: $PTSerif;
+  padding: rem(15) rem(20);
+  min-width: rem(280);
+  &:not(:last-child) {
+    border-bottom: 1px solid #dcd9d9;
+  }
+}
+
+.prop_item {
+  // Style for "Leuchtturm"
+  color: $text;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  padding: rem(15) rem(20);
+  &:not(:last-of-type) {
+    border-bottom: 1px solid #dcd9d9;
+  }
+}
+tr:last-child {
+   .prop_name, .prop_item {
+     &:not(:last-child) {
+       border-bottom: none;
+     }
+   }
+ }
+.clean-comp {
+  // Style for "Очистить"
+  color: #3a5605;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.57;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-family: $PTSerif;
+  text-align: center;
+  margin-top: auto;
+  &:hover {
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,124 @@
+.m-text {
+
+  font-size: 16px;
+  line-height: 1.5;
+  color: $text;
+  font-weight: 400;
+  margin-bottom: 40px;
+
+  b {
+    font-weight: 700;
+  }
+  a {
+    color: #047030;
+    font-weight: 700;
+  }
+
+}
+.m-slider {
+  @extend .foto-slider;
+  margin: 0 ;
+  @include media-breakpoint-down(sm){
+    margin-top: 20px;
+  }
+}
+.manufacturers__title {
+  // Style for "Leuchtturm"
+  color: $head;
+  font-size: 17px;
+  font-weight: 700;
+  font-family: $PTSerif;
+  margin-bottom: 10px;
+}
+.manufacturers__text {
+  // Style for "Самый боль"
+  color: $text;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.manufacturers__item {
+  padding: rem(60) 0;
+  &:not(:last-child) {
+    border-bottom: 1px solid  #dcd9d9;
+  }
+  &:first-child {
+    padding-top: 0;
+  }
+  img {
+    @include media-breakpoint-down(sm) {
+      display: block;
+      margin: 0 auto 20px;
+    }
+  }
+}
+.invite {
+  border-radius: 50px;
+  background-color: $yellow2;
+  padding: rem(52) 10px rem(40);
+  text-align: center;
+  background-image: url(../images/yellow-bg.png);
+  background-size: cover;
+  margin-bottom: rem(90);
+
+  .btn {
+    padding: rem(10) rem(26);
+    height: rem(70);
+  }
+}
+.invite__title {
+  // Style for "Приглашаем"
+  color: #3a5605;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: $PTSerif;
+  margin-bottom:rem(46);
+  display: inline-block;
+  .btn {
+    margin-top: rem(50);
+  }
+
+}
+.m-popup {
+  display: none;
+
+
+  display: none;
+
+}
+.m-popup__body {
+  box-shadow: 0 0 18px rgba(39, 39, 39, 0.31);
+  border-radius: 7px;
+  background-color: #f8f8f8;
+
+  background-image: url(../images/m-pupop.jpg);
+  background-size: cover;
+  margin: 0 auto;
+  min-height: 329px;
+  display: flex;
+  align-items: center;
+  padding-left: rem(48);
+  .row {
+    width: 100%;
+  }
+}
+
+.m-popup__text {
+  // Style for "Благодарим"
+  color: $head;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.19;
+
+   b {
+     font-weight: 700;
+   }
+}
+.m-slider__alt {
+  // Style for "Благодарст"
+  color: $head;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 5px;
+}

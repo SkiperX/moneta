@@ -1,0 +1,125 @@
+.footer {
+  margin-top: auto;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background: url(../images/footer-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  @include media-breakpoint-down(sm) {
+    text-align: center;
+
+  }
+  .contacts {
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 10px;
+      font-size: 22px !important;
+    }
+  }
+}
+.footer-menu__column {
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 30px;
+  }
+}
+.footer-menu__link {
+  color: $green2;
+  font-size: 14px;
+  font-weight: 400;
+  display: block;
+  margin-bottom: 5px;
+  @include media-breakpoint-down(sm) {
+    font-size: 20px !important;
+  }
+}
+.column-header  {
+  margin-bottom: 20px;
+}
+.column-text {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.social-item {
+  &:not(:last-child) {
+
+  }
+}
+.footer__menu {
+
+}
+.footer__nav-item {
+  display: block;
+}
+.footer-menu__link {
+  display: block;
+  color: $green2;
+  font-size: 14px;
+  font-weight: 400;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.scroll-top {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  opacity: 0.6;
+  transition: 0.2s;
+  display: none;
+  border-radius: 5px;
+  border: 1px solid #eac301;
+  background-color: $yellow2;
+  width: 50px;
+  height: 50px;
+  background-image: url(../images/arr.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  &:hover {
+    opacity: 0.8;
+    border-color: #eac301;
+    background-color: #ffd400;
+  }
+  &:after {
+    content: "Наверх";
+    position: absolute;
+    top: 100%;
+    margin-top: 5px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: $gray1;
+    font-size: 14px;
+    font-weight: 400;
+
+  }
+
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+}
+.contacts {
+  color: $text;
+  font-size: 14px;
+  font-weight: 400;
+}
+.copyright {
+  color: $gray1;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 10px;
+  @include media-breakpoint-down(sm) {
+    font-size: 16px !important;
+  }
+}
+.footer__mail {
+  display: block;
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 10px;
+    font-size: 26px !important;
+  }
+}
+.f-logo {
+  margin-bottom: 17px;
+  display: block;
+}

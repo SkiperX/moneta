@@ -1,0 +1,212 @@
+.cart-section {
+  border-radius: 7px;
+  border: 4px solid $lgreen;
+  background-color: $yellow3;
+}
+.cart-section__left {
+  padding: rem(45) rem(55);
+}
+.cart-section__title {
+  // Style for "Адрес в Ек"
+  color: $head;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: $PTSerif;
+  letter-spacing: -0.22px;
+  margin-bottom: 20px;
+}
+.contacts {
+
+}
+.contacts__item {
+  display: flex;
+  margin-bottom: 20px;
+}
+.contacts__label {
+  // Style for "Адрес:"
+  color: $head;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: $PTSerif;
+  min-width: 105px;
+  margin-right: 20px;
+}
+.contacts__text {
+  // Style for "Вторник-Пя"
+  color: $head;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.33;
+
+}
+.cart-section__title-text {
+  // Style for "Здесь вы м"
+  color: $text;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.19;
+  margin-bottom: 20px;
+}
+.control__title {
+  // Style for "Если что-т"
+  color: #3a5605;
+  font-size: rem(45);
+  font-weight: 400;
+
+  font-family: $PTSerif;
+  margin-bottom: 15px;
+}
+.control {
+  border-radius: rem(50);
+  background-color: $yellow2;
+  padding: 0;
+  overflow: hidden;
+  background-size: cover;
+  margin-bottom: rem(75);
+  @include media-breakpoint-up(lg) {
+    background-image: url(../images/control.jpg);
+  }
+  img {
+    display: block;
+  }
+}
+.control__list {
+  // Style for "—  Вам не"
+  color: #3a5605;
+  font-size: 15px;
+
+
+  // Text style for "—  Вам не"
+  font-weight: 400;
+  line-height: 1.33;
+  // Text style for "Пожалуйста"
+
+}
+.control__bold {
+  // Style for "—  Вам не"
+  color: #3a5605;
+  font-size: 15px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+
+  // Text style for "Пожалуйста"
+  font-weight: 700;
+  line-height: 1.73;
+  // Text style for "Обещаю вам"
+
+}
+.control__bold2 {
+  // Style for "Прямой кон"
+  color: #3a5605;
+  font-size: 17px;
+  font-weight: 700;
+
+  font-family: $PTSerif;
+
+}
+.control__img {
+  @include media-breakpoint-down(lg) {
+    margin-left: -40px;
+    display: inline-block;
+  }
+}
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  border-radius: 5px;
+  cursor: url(../images/zoom-cursor.png) 20 20, pointer;
+}
+.gallery-item:after, .gallery-item:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  -webkit-transition: .4s;
+}
+.gallery-item:before {
+  z-index: 3;
+  background: white;
+  transition: .4s;
+}
+.gallery-item:hover:before {
+  opacity: .1;
+}
+.gallery-mini {
+  -webkit-transform: scale(1.01);
+  transform: scale(1.01);
+  -webkit-transition: .4s;
+  transition: .4s;
+  display: block;
+  will-change: transform;
+}
+.gallery-item:hover .gallery-mini {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.foto-slider {
+  text-align: center;
+  .slick-list {
+    margin: 0 30px;
+  }
+  .gallery-item {
+    margin: 3px;
+  }
+}
+.geo-maps:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: '';
+  pointer-events: all
+}
+.geo-maps:hover:after{
+  pointer-events: none
+}
+.geo-maps {
+
+  position: relative
+}
+.cantacts-form {
+  margin-bottom: rem(100);
+  label span {
+    // Style for "Имя:"
+    color: #252525;
+    font-size: 16px;
+    font-weight: 400;
+
+  }
+  textarea {
+    max-width: 735px;
+  }
+  .label--checkbox {
+    vertical-align: middle;
+    margin-left: 40px;
+    @include media-breakpoint-down(sm) {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
+}
+.control__right {
+  padding: 10px 0;
+  padding-right: 10px;
+  @include media-breakpoint-down(md) {
+    padding: rem(30) rem(70);
+  }
+}
+.fancybox-close {
+  width: 16px;
+  height: 16px;
+  top: 17px;
+  right: 23px;
+  background: url(../images/close.png);
+}
+.fancybox-skin {
+  padding: 30px !important;
+}

@@ -1,0 +1,326 @@
+.container.container--catalog
+    a(href="").green-str-btn.catalog__top-btn Назад в Монеты
+    .h1 Альбомы для монет и банкнот
+        span  (найдено 1836 товаров)
+    .row.js-stycky__container
+        // колонка с фильтром
+        .col-md-12.col-lg-3.col-xx-auto.js-stycky.filter-col
+            include includes/filter.pug
+            a(href="").green-str-btn.green-str-btn--big.filter__back-btn.mt-5 Назад в Монеты
+        // колонка с фильтром конец
+        // центральная колонка
+        .col-md-12.col-lg-9.catalog-col
+            .catalog-category
+                .row
+                    .col-6.col-md-3.col-xl-2
+                        a.cat-cart-mini(style="background-image: url(images/s1.jpg)")
+                            .cat-cart-mini__text Альбомы для монет
+                    .col-6.col-md-3.col-xl-2
+                        a.cat-cart-mini(style="background-image: url(images/s1.jpg)")
+                            .cat-cart-mini__text Альбомы для монет
+
+            .catalog-list.row-list
+                .catalog-sort
+                    .row.align-items-center
+                        .col-12.col-sm-7
+                            .catalog-sort__select.b-label Сортировать по:
+
+                                select.styler.style-conf.width
+                                    option Сначало дорогие
+                                    option Сначало дешовые
+                                label.check-label
+                                    input.check-styled(type='checkbox', checked='')
+                                    span.check-label__text В наличии
+
+                        .col-md-5
+                            .filter-toggle.b-label
+                                | Показывать:
+                                a.filter-toggle__link.active(href="" title="Показать плитками")
+                                    +svg('cube')
+                                a.filter-toggle__link(href="" title="Показать списком")
+                                    +svg('list')
+                                a.filter-toggle__link(href="" title="Показать таблицей")
+                                    +svg('tabl')
+
+
+
+                        .col-12.col-sm-6.hidden-lg-up.text-right
+                            .mobile-filter Фильтры
+                                i.sprite.icon-controls
+                .row-card
+                    .row.align-items-center
+                        .col-md-7
+                            .row.align-items-center
+                                .col-sm-3.col-md-auto.img-col
+                                    .sale-icon.card__bals--right -30%
+                                    .img-cont.row-img-cont
+                                        img(src="images/p1.jpg" alt="")
+                                .col-sm-9.col-md-auto.name-col
+                                    .cart-name 2 евро 2017 год Греция "60 лет Никос Казандзакис"
+                                    .cart-desc 2 евро 2017 год Греция "60 лет Никос Казандзакис"
+                                    .cart-status.status-red Нет в наличии
+                        .col-md-5.cart-row__right
+                            .row.align-items-center
+                                .col-sm-4
+                                    .price.rub2 120
+                                .col-sm-6
+                                    .cart-controls2
+                                        a(href="").btn.btn-yellow2 Подробнее
+                                        a(href="").btn.btn-green.buy-btn
+                                            +svg('empty_cart')
+                                .col-sm-2.col-md-12.col-xl-2
+                                    .row-icons
+                                        a(href="").cart-icon.cart-star.active
+                                            +svg('star')
+                                        a(href="").cart-icon.cart-star.active
+                                            +svg('libra_line')
+                .row-card
+                    .row.align-items-center
+                        .col-md-7
+                            .row.align-items-center
+                                .col-sm-3.col-md-auto.img-col
+                                    .sale-icon.card__bals--right -30%
+                                    .img-cont.row-img-cont
+                                        img(src="images/p1.jpg" alt="")
+                                .col-sm-9.col-md-auto.name-col
+                                    .cart-name 2 евро 2017 год Греция "60 лет Никос Казандзакис"
+                                    .cart-desc 2 евро 2017 год Греция "60 лет Никос Казандзакис"
+                                    .cart-status.status-green
+                                        +svg('check')
+                                        | В наличии
+                                        .new-icon.card__bals Новинка
+                        .col-md-5.cart-row__right
+                            .row.align-items-center
+                                .col-sm-4
+                                    .price.rub2 120
+                                .col-sm-6
+                                    .cart-controls2
+                                        a(href="").btn.btn-yellow2 Подробнее
+                                        a(href="").btn.btn-green.buy-btn
+                                            +svg('empty_cart')
+                                .col-sm-2.col-md-12.col-xl-2
+                                    .row-icons
+                                        a(href="").cart-icon.cart-star.active
+                                            +svg('star')
+                                        a(href="").cart-icon.cart-star.active
+                                            +svg('libra_line')
+                .row-card
+                    .row.align-items-center
+                        .col-md-7
+                            .row.align-items-center
+                                .col-sm-3.col-md-auto.img-col
+                                    .sale-icon.card__bals--right -30%
+                                    .img-cont.row-img-cont
+                                        img(src="images/p1.jpg" alt="")
+                                .col-sm-9.col-md-auto.name-col
+                                    .cart-name 2 евро 2017 год Греция "60 лет Никос Казандзакис"
+                                    .cart-desc 2 евро 2017 год Греция "60 лет Никос Казандзакис"
+                                    .cart-status.status-red Нет в наличии
+                                        .balls.card__bals 12 баллов
+                        .col-md-5.cart-row__right
+                            .row.align-items-center
+                                .col-sm-4
+                                    .price.rub2 120
+                                .col-sm-6
+                                    .cart-controls2
+                                        a(href="").btn.btn-yellow2 Подробнее
+                                        a(href="").btn.btn-green.buy-btn
+                                            +svg('empty_cart')
+                                .col-sm-2.col-md-12.col-xl-2
+                                    .row-icons
+                                        a(href="").cart-icon.cart-star.active
+                                            +svg('star')
+                                        a(href="").cart-icon.cart-star.active
+                                            +svg('libra_line')
+                .row-card
+                    .row.align-items-center
+                        .col-md-7
+                            .row.align-items-center
+                                .col-sm-3.col-md-auto.img-col
+                                    .sale-icon.card__bals--right -30%
+                                    .img-cont.row-img-cont
+                                        img(src="images/p1.jpg" alt="")
+                                .col-sm-9.col-md-auto.name-col
+                                    .cart-name 2 евро 2017 год Греция "60 лет Никос Казандзакис"
+                                    .cart-desc 2 евро 2017 год Греция "60 лет Никос Казандзакис"
+                                    .cart-status.status-red Нет в наличии
+                                        .hit-icon.card__bals Хит
+                        .col-md-5.cart-row__right
+                            .row.align-items-center
+                                .col-sm-4
+                                    .price.rub2 120
+                                .col-sm-6
+                                    .cart-controls2
+                                        a(href="").btn.btn-yellow2 Подробнее
+                                        a(href="").btn.btn-green.buy-btn
+                                            +svg('empty_cart')
+                                .col-sm-2.col-md-12.col-xl-2
+                                    .row-icons
+                                        a(href="").cart-icon.cart-star.active
+                                            +svg('star')
+                                        a(href="").cart-icon.cart-star.active
+                                            +svg('libra_line')
+                .row-card
+                    .row.align-items-center
+                        .col-md-7
+                            .row.align-items-center
+                                .col-sm-3.col-md-auto.img-col
+                                    .sale-icon.card__bals--right -30%
+                                    .img-cont.row-img-cont
+                                        img(src="images/p1.jpg" alt="")
+                                .col-sm-9.col-md-auto.name-col
+                                    .cart-name 2 евро 2017 год Греция "60 лет Никос Казандзакис"
+                                    .cart-desc 2 евро 2017 год Греция "60 лет Никос Казандзакис"
+                                    .cart-status.status-red Нет в наличии
+                        .col-md-5.cart-row__right
+                            .row.align-items-center
+                                .col-sm-4
+                                    .price.rub2 120
+                                .col-sm-6
+                                    .cart-controls2
+                                        a(href="").btn.btn-yellow2 Подробнее
+                                        a(href="").btn.btn-green.buy-btn
+                                            +svg('empty_cart')
+                                .col-sm-2.col-md-12.col-xl-2
+                                    .row-icons
+                                        a(href="").cart-icon.cart-star.active
+                                            +svg('star')
+                                        a(href="").cart-icon.cart-star.active
+                                            +svg('libra_line')
+                .row-card
+                    .row.align-items-center
+                        .col-md-7
+                            .row.align-items-center
+                                .col-sm-3.col-md-auto.img-col
+                                    .sale-icon.card__bals--right -30%
+                                    .img-cont.row-img-cont
+                                        img(src="images/p1.jpg" alt="")
+                                .col-sm-9.col-md-auto.name-col
+                                    .cart-name 2 евро 2017 год Греция "60 лет Никос Казандзакис"
+                                    .cart-desc 2 евро 2017 год Греция "60 лет Никос Казандзакис"
+                                    .cart-status.status-red Нет в наличии
+                        .col-md-5.cart-row__right
+                            .row.align-items-center
+                                .col-sm-4
+                                    .price.rub2 120
+                                .col-sm-6
+                                    .cart-controls2
+                                        a(href="").btn.btn-yellow2 Подробнее
+                                        a(href="").btn.btn-green.buy-btn
+                                            +svg('empty_cart')
+                                .col-sm-2.col-md-12.col-xl-2
+                                    .row-icons
+                                        a(href="").cart-icon.cart-star.active
+                                            +svg('star')
+                                        a(href="").cart-icon.cart-star.active
+                                            +svg('libra_line')
+                .row-card
+                    .row.align-items-center
+                        .col-md-7
+                            .row.align-items-center
+                                .col-sm-3.col-md-auto.img-col
+                                    .sale-icon.card__bals--right -30%
+                                    .img-cont.row-img-cont
+                                        img(src="images/p1.jpg" alt="")
+                                .col-sm-9.col-md-auto.name-col
+                                    .cart-name 2 евро 2017 год Греция "60 лет Никос Казандзакис"
+                                    .cart-desc 2 евро 2017 год Греция "60 лет Никос Казандзакис"
+                                    .cart-status.status-red Нет в наличии
+                        .col-md-5.cart-row__right
+                            .row.align-items-center
+                                .col-sm-4
+                                    .price.rub2 120
+                                .col-sm-6
+                                    .cart-controls2
+                                        a(href="").btn.btn-yellow2 Подробнее
+                                        a(href="").btn.btn-green.buy-btn
+                                            +svg('empty_cart')
+                                .col-sm-2.col-md-12.col-xl-2
+                                    .row-icons
+                                        a(href="").cart-icon.cart-star.active
+                                            +svg('star')
+                                        a(href="").cart-icon.cart-star.active
+                                            +svg('libra_line')
+                .row-card
+                    .row.align-items-center
+                        .col-md-7
+                            .row.align-items-center
+                                .col-sm-3.col-md-auto.img-col
+                                    .sale-icon.card__bals--right -30%
+                                    .img-cont.row-img-cont
+                                        img(src="images/p1.jpg" alt="")
+                                .col-sm-9.col-md-auto.name-col
+                                    .cart-name 2 евро 2017 год Греция "60 лет Никос Казандзакис"
+                                    .cart-desc 2 евро 2017 год Греция "60 лет Никос Казандзакис"
+                                    .cart-status.status-red Нет в наличии
+                        .col-md-5.cart-row__right
+                            .row.align-items-center
+                                .col-sm-4
+                                    .price.rub2 120
+                                .col-sm-6
+                                    .cart-controls2
+                                        a(href="").btn.btn-yellow2 Подробнее
+                                        a(href="").btn.btn-green.buy-btn
+                                            +svg('empty_cart')
+                                .col-sm-2.col-md-12.col-xl-2
+                                    .row-icons
+                                        a(href="").cart-icon.cart-star.active
+                                            +svg('star')
+                                        a(href="").cart-icon.cart-star.active
+                                            +svg('libra_line')
+                .row-card
+                    .row.align-items-center
+                        .col-md-7
+                            .row.align-items-center
+                                .col-sm-3.col-md-auto.img-col
+                                    .sale-icon.card__bals--right -30%
+                                    .img-cont.row-img-cont
+                                        img(src="images/p1.jpg" alt="")
+                                .col-sm-9.col-md-auto.name-col
+                                    .cart-name 2 евро 2017 год Греция "60 лет Никос Казандзакис"
+                                    .cart-desc 2 евро 2017 год Греция "60 лет Никос Казандзакис"
+                                    .cart-status.status-red Нет в наличии
+                        .col-md-5.cart-row__right
+                            .row.align-items-center
+                                .col-sm-4
+                                    .price.rub2 120
+                                .col-sm-6
+                                    .cart-controls2
+                                        a(href="").btn.btn-yellow2 Подробнее
+                                        a(href="").btn.btn-green.buy-btn
+                                            +svg('empty_cart')
+                                .col-sm-2.col-md-12.col-xl-2
+                                    .row-icons
+                                        a(href="").cart-icon.cart-star.active
+                                            +svg('star')
+                                        a(href="").cart-icon.cart-star.active
+                                            +svg('libra_line')
+
+
+
+
+
+
+
+
+
+
+                .catalog__controls
+                    .row.align-items-center
+                        .col-12.col-sm-4
+                            .catalog-sort__select.b-label Показывать по:
+
+                                select.styler.style-conf
+                                    option 50
+                                    option 100
+                                    option все
+                        .col-12.col-sm-4.text-center
+                            a(href='').btn.btn-yellow.catalog__show-more показать еще
+
+
+section.seotext
+    .container
+        .h2 Альбомы для монет и банкнот
+        p Альбомы не только надежно защищают Ваши коллекции, но и позволяют их наглядно представлять. Все принадлежности оптимально подобраны для длительного хранения Ваших коллекционных материалов. Весь представленный товар есть в наших магазинах в Екатеринбурге, и Вы можете приехать и посмотреть товар. Отличная серия коллекционных альбомов, украсит Вашу книжную библиотеку. Послужит не заменимым подарком, как профессионалу, так и любителю. Здесь Вы можете купить альбом для монет, а именно альбомы для монет 10 рублей. Весь представленный товар есть в наших магазинах в Екатеринбурге, и Вы можете приехать и предварительно посмотреть товар.
+
+include includes/last-seen.pug

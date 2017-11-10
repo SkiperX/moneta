@@ -1,0 +1,127 @@
+.svg {
+  transition: 0.2s !important;
+}
+.svg-star {
+  fill: white;
+  stroke: #6b6c6b;
+  &+.icon__num {
+    right: -5px;
+  }
+}
+.svg-libra_line {
+  fill: #6b6c6b;
+
+}
+#svg-icon-full_cart {
+  fill: #00712d;
+}
+.call-block .svg-phone,
+.svg-phone_full {
+  fill: #00712d;
+  stroke: #00712d;
+  fill-rule: nonzero;
+}
+#svg-icon-key {
+  fill: $yellow;
+
+}
+.call-block .svg-phone,
+.svg-phone_full {
+  width: 27px;
+  height: 29px;
+  vertical-align: bottom;
+  margin-right: 15px;
+}
+.svg-key {
+  width: 18px;
+  height: 18px;
+}
+.svg-arrow_big_right,
+.svg-arrow_big_left {
+  width: 10px;
+  height: 16px;
+  fill: white;
+}
+.svg-search {
+  opacity: 0.86;
+  width: 21px;
+  height: 21px;
+  fill: #282828;
+  transition: 0.2s;
+  transition-timing-function: linear;
+}
+.loop-icon:hover {
+  .svg-search {
+    opacity: 1;
+    fill: #000;
+  }
+}
+.svg-cross {
+  fill: #c8c8c8;
+  width: 16px;
+  height: 16px;
+}
+.svg-refresh {
+  fill: #c8c8c8;
+  width: 24px;
+  height: 24px;
+}
+.svg-cube {
+  fill: $gray1;
+  width: 18px;
+  height: 19px;
+  &:hover {
+    fill: #00712d;
+  }
+}
+.svg-tabl {
+  fill: $gray1;
+  width: 18px;
+  height: 17px;
+  &:hover {
+    fill: #00712d;
+  }
+}
+.svg-coin {
+  fill: #c6af18;
+}
+.svg-list {
+  fill: $gray1;
+  width: 23px;
+  height: 20px;
+  &:hover {
+    fill: #00712d;
+  }
+}
+.filter-toggle__link.active {
+  svg {
+    fill: #00712d;
+  }
+}
+.product-right__status--ok .svg {
+  fill: $green;
+  width: 12px;
+  height: 9px;
+  margin-right: 8px;
+}
+.green-link .svg-file {
+  fill: $gray2;
+  width: 15px;
+  height: 17px;
+  margin-right: 5px;
+}
+.svg-ship {
+  fill: white;
+  width: 57px;
+  height: 33px;
+}
+.svg-handshake  {
+  fill: white;
+  width: 56px;
+  height: 37px;
+}
+.svg-people {
+  fill: white;
+  width: 61px;
+  height: 54px;
+}

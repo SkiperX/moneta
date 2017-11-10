@@ -1,0 +1,361 @@
+.left-catalog {
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+}
+.cat-group {
+  &.open {
+    .cat-group__hidden {
+      display: block;
+    }
+    .cat-group__title.trigger:after {
+      transform: translateY(-50%) rotate(180deg);
+    }
+  }
+
+}
+.cat-group2 {
+  &.open {
+    .cat-group__hidden2 {
+      display: block;
+    }
+    .cat-group__title2 {
+      background-color: #d9d9d9;
+    }
+  }
+}
+.cat-group__title {
+  // Style for "Литература"
+  color: #3e3e3e;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: $PTSerif;
+  border: 1px solid #e6e6e6;
+  background-color: #dcd9d9;
+  padding: 20px 16px;
+  transition: 0.2s;
+  display: block;
+  position: relative;
+  &:hover {
+    background-color: $yellow2;
+  }
+  &.trigger:after {
+    content: '';
+    width: 12px;
+    height: 7px;
+    background-image: url('../images/gray-arr.png');
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    transition: 0.2s;
+  }
+}
+.cat-group__hidden {
+  display: none;
+}
+.cat-group__title2 {
+  // Style for "Альбомы, л"
+  color: $text;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: #f2f2f2;
+  transition: 0.2s;
+  display: block;
+  padding: 14px;
+  padding-left: rem(40);
+  border-bottom: 1px solid #cccccc;
+  border-top: 1px solid #cccccc;
+  margin-bottom: -1px;
+  position: relative;
+  &:hover {
+    background-color: $yellow2 !important;
+  }
+
+}
+.cat-group__hidden2 {
+  display: none;
+}
+.cat-group__link {
+  // Style for "Optima  Va"
+  color: $text;
+  font-size: 14px;
+  font-weight: 400;
+  display: block;
+  background-color: #f2f2f2;
+  padding: 10px;
+  padding-left: rem(70);
+
+
+  // Text style for "Karat"
+
+  &:hover {
+    color: $gray2;
+    text-decoration: underline;
+  }
+}
+.gray-title {
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  tr:nth-child(1) {
+    td {
+      color: $gray1;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 2.86;
+      font-family: $PTSerif;
+
+    }
+  }
+  td:nth-child(1) {
+    border-left: none;
+    text-align: center;
+
+    @include media-breakpoint-up(md) {
+      min-width: 180px;
+    }
+    // Style for "15 000 % 3"
+    color: $head;
+    font-size: 15px;
+
+
+
+    font-weight: 700;
+    white-space: nowrap;
+
+
+    span {
+      color: $text;
+      font-weight: 400;
+    }
+  }
+  td:nth-child(2) {
+    text-align: center;
+
+    // Style for "15 000 % 3"
+    color: $head;
+    font-size: 15px;
+    white-space: nowrap;
+
+
+    font-weight: 700;
+    @include media-breakpoint-up(md) {
+      min-width: 120px;
+    }
+
+
+    span {
+      color: $text;
+      font-weight: 400;
+    }
+  }
+  td:nth-child(3) {
+      border-right: none;
+    padding-left: rem(30);
+  }
+  td {
+    border: 1px solid #dcd9d9;
+    // Style for "Бесплатные"
+    color: $head;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 5px;
+  }
+}
+.w-action-text {
+  // Style for "В настоящи"
+  color: $text;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 15px;
+
+}
+.w-action-list {
+  @include media-breakpoint-down(md) {
+    text-align: center;
+  }
+}
+.w-action {
+  position: relative;
+  display: inline-block;
+  margin-right: 45px;
+  margin-bottom: 30px;
+  .sale-icon {
+    position: absolute;
+    top: 10px;
+    right: -15px;
+  }
+}
+.green-title {
+  color: #3a5605;
+}
+.l-green {
+  border-radius: 7px;
+  background-color: $lgreen;
+  padding: 20px 25px;
+}
+.l-green__title {
+  // Style for "В нашем са"
+  color: $head;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.24;
+  font-family: $PTSerif;
+  letter-spacing: -0.17px;
+  margin-bottom: 30px;
+  span {
+    text-decoration: underline;
+  }
+
+}
+.l-green__item {
+  @include media-breakpoint-up(md) {
+    display: flex;
+  }
+
+  margin-bottom: 15px;
+}
+.l-green__ico {
+  margin-right: rem(15);
+  width: rem(65);
+  flex-shrink: 0;
+  @include media-breakpoint-down(sm) {
+    width: 40px;
+  }
+}
+
+.l-green__text {
+  // Style for "Оплата при"
+  color: $text;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.47;
+
+  // Text style for "салонах-ма"
+
+  span {
+    text-decoration: underline;
+  }
+  b {
+    color: $head;
+    font-weight: 700;
+  }
+}
+.l-green-title2 {
+  // Style for "Наличными"
+  color: $head;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.4;
+  font-family: $PTSerif;
+  letter-spacing: -0.15px;
+}
+.img-line {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  @include media-breakpoint-down(sm) {
+    flex-direction: column;
+  }
+  img {
+    margin-right: 35px;
+    @include media-breakpoint-down(sm) {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+  }
+}
+.ship-section {
+  @include media-breakpoint-up(md) {
+    padding-left: 110px;
+  }
+
+  margin-top: 30px;
+
+  margin-bottom: 60px;
+}
+.green {
+  color: #047030;
+}
+.btn-ship {
+  // Style for "Прямоуголь"
+  border-radius: 5px;
+  background-color: $green2;
+  background-image: linear-gradient(to top, #006c23 0%, #008b24 100%);
+  padding: 22px;
+
+  align-items: center;
+
+  // Style for "рассчитать"
+  color: $yellow3;
+  font-size: 15px;
+  font-weight: 400;
+
+  text-transform: uppercase;
+  font-family: $PTSerif;
+
+
+  @extend .svg-btn;
+}
+.svg-btn {
+  display: inline-flex;
+  .svg {
+    margin-right: 25px;
+  }
+  &:hover {
+    //background: #008b24;
+    color: $yellow2;
+    .svg {
+      fill: $yellow2;
+    }
+  }
+}
+.mb100 {
+  margin-bottom: 100px;
+}
+.wh-teble {
+  margin-top: 15px;
+  background: white;
+  border-collapse: collapse;
+  width: 100%;
+  overflow-x: auto;
+  display: block;
+  td {
+    border: 1px solid #dcd9d9;
+    padding: 10px;
+    color: $head;
+  }
+  tr:nth-child(1) {
+    td {
+      color: #047030 !important;
+      font-size: 14px;
+      font-weight: 400;
+      font-family: $PTSerif;
+    }
+    td:nth-child(1) {
+      font-weight: 700;
+
+    }
+    td:nth-child(1) {
+      font-weight: 700;
+    }
+    td:nth-child(4) {
+      //font-weight: 700;
+    }
+  }
+  td:nth-child(2) {
+    background: rgba(#ffe40d, 0.66);
+    text-align: center;
+    font-weight: 700;
+  }
+  td:nth-child(1) {
+    background-color: #c0edbb;
+    font-weight: 700;
+  }
+  td:nth-child(4) {
+    font-weight: 700;
+  }
+  span {
+    text-decoration: none;
+
+  }
+}

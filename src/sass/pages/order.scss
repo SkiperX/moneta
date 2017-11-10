@@ -1,0 +1,243 @@
+.subtitle {
+  color: $text;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: -15px;
+  margin-bottom: 10px;
+  span {
+    color: #ff0000;
+  }
+}
+.order-group {
+  margin-bottom: 20px;
+  &.open {
+    .order-group__arrow {
+      transform: translateY(-50%) rotate(90deg);
+    }
+  }
+}
+.order-group__head {
+  border-radius: 7px 7px 0 0;
+  background-color: $lgreen;
+  padding: 15px 29px 15px;
+  border-bottom: 1px solid #ccefc9;
+  color: $head;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.11;
+  font-family: $PTSerif;
+  letter-spacing: -0.19px;
+  position: relative;
+  cursor: pointer;
+}
+
+.order-group__body {
+  border-radius: 0 0 7px 7px;
+  background-color: $lgreen;
+  padding: 24px 29px 10px;
+}
+.flex-label--order {
+  max-width: 585px;
+  span {
+    min-width: 80px;
+    font-size: 16px;
+    i {
+      color: #fd0000;
+      font-style: normal;
+    }
+  }
+}
+.flex-label--text {
+  span {
+    min-width: 80px;
+    font-size: 16px;
+    i {
+      color: #fd0000;
+      font-style: normal;
+    }
+  }
+  .btn {
+    @include media-breakpoint-up(md) {
+      margin-left: 20px;
+    }
+  }
+}
+.order-group__arrow {
+  position: absolute;
+  top: 50%;
+  right: 38px;
+  transition: 0.4s;
+  transform: translateY(-50%) rotate(270deg);
+  .svg {
+    fill: #047030;
+    height: 21px;
+    width: 12px;
+  }
+}
+.radio-cont {
+
+  label {
+    margin-right: 50px;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+}
+.opl-select-label {
+  display: block;
+  padding: 23px 26px;
+  border-radius: 10px;
+  border: 2px solid $yellow3;
+  background-color: $yellow3;
+  transition: 0.2s;
+  user-select: none;
+  cursor: pointer;
+  height: 100%;
+  input {
+    display: none;
+
+  }
+  &.checked {
+    border: 2px solid $green;
+  }
+}
+.opl-name {
+  color: #252525;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 0.93;
+  font-family: $PTSerif;
+}
+.opl-text {
+  color: $head;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.33;
+}
+.opl-name2 {
+  color: #252525;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 0.93;
+  font-family: $PTSerif;
+  margin-bottom: 10px;
+}
+.opl-text2 {
+  color: $gray1;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.21;
+}
+.order-num {
+
+  // Text style for "1"
+  color: #564b05;
+  font-family: $PTSerif;
+  font-size: 26px;
+  font-weight: 400;
+
+
+  &:after {
+    content: " шт";
+    font-weight: 400;
+    color: $gray1;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.06;
+  }
+}
+.shopping-cart--order {
+  .product-price {
+    color: #564b05;
+  }
+}
+.opl-select {
+  margin-bottom: 20px;
+  & > div {
+    margin-bottom: 15px;
+  }
+}
+.order-group__title {
+  color: #252525;
+  font-size: 17px;
+  font-weight: 700;
+  font-family: $PTSerif;
+  margin-bottom: 20px;
+}
+.totals--order {
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+  background-color: #f2f2f2;
+  padding: rem(30);
+  width: 100%;
+  .totals-item {
+    label {
+      color: $head;
+      font-size: 15px;
+      font-weight: 400;
+      font-family: $PTSerif;
+
+
+    }
+  }
+  .totals-item-total {
+
+    label {
+      color: $head;
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 1.18;
+      font-family: $PTSerif;
+    }
+  }
+
+}
+.order-btn {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px !important;
+}
+.radio-cont--white {
+  background: white;
+  border-radius: 10px;
+  padding: 20px 15px 0;
+  border: 2px solid $yellow;
+  margin-bottom: 20px;
+}
+.order-row {
+  margin-bottom: 30px;
+
+}
+.cart-top-btn {
+  clear: both;
+  &>div {
+    padding: 0 15px;
+  }
+  @include media-breakpoint-down(sm) {
+    flex-direction: column;
+    align-items: center;
+    &>div {
+      margin-bottom: 15px;
+    }
+  }
+}
+.all-cart {
+  // Style for "Всего в ко"
+  color: $head;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.33;
+  font-family: $PTSerif;
+  margin-top: 15px;
+  @include media-breakpoint-up(md) {
+    float: left;
+  }
+  @include media-breakpoint-down(sm) {
+    text-align: center;
+  }
+
+
+  span {
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,350 @@
+.im-items {
+    @include media-breakpoint-down(md) {
+      text-align: center;
+    }
+}
+.im-item {
+  background-color: $gray2;
+  width: rem(271);
+  height: rem(142);
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  background: url(../images/green-im.jpg);
+  background-size: cover;
+  padding-left: rem(30);
+  padding-right: 5px;
+  margin-bottom: 30px;
+
+  &:not(:last-of-type) {
+    @include media-breakpoint-up(lg) {
+      margin-right: rem(70);
+    }
+
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 14px;
+      height: 24px;
+      top: 50%;
+      right: rem(-45);
+      margin-top: -12px;
+      background: url(../images/arr-green.png);
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+    }
+  }
+}
+.im-item__num {
+  // Style for "1"
+  color: $yellow;
+  font-size: rem(40);
+  font-weight: 700;
+  font-family: $PTSerif;
+
+  letter-spacing: -0.4px;
+  margin-right: rem(28);
+}
+.im-item__righe {
+
+}
+.im-item__title {
+
+
+  font-family: $PTSerif;
+
+  // Text style for "Выбрать, К"
+  color: $yellow3;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.06;
+
+
+}
+.im-item__desc {
+  color: #a5dcb3;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: $PTSerif;
+}
+.im-item__green {
+  // Style for "Мы Вас рад"
+  color: #047030;
+  font-size: rem(24);
+  font-weight: 700;
+  font-family: $PTSerif;
+  margin-left: rem(30);
+  height: rem(142);
+  display: inline-flex !important;
+  @extend .centring;
+  @include media-breakpoint-down(lg) {
+    display: none !important;
+  }
+}
+.im-text {
+  // Style for "Интернет -"
+  color: $head;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: $PTSerif;
+
+  // Text style for "И, нтернет"
+  letter-spacing: -0.24px;
+
+
+  .blue {
+    // Text style for "www.moneta"
+    color: #138add;
+    letter-spacing: -0.24px;
+    text-decoration: underline;
+  }
+  .green {
+    // Text style for "«Уральский"
+    color: #047030;
+    letter-spacing: -0.24px;
+  }
+}
+.order-items {
+  margin-top: 37px;
+  @include media-breakpoint-down(md) {
+    text-align: center;
+  }
+}
+.order-item {
+  border-radius: 10px;
+  border: 1px solid #309338;
+  vertical-align: top;
+  width: 284px;
+  height: 84px;
+
+  display: inline-flex;
+  align-items:center;
+  padding-right: 8px;
+  position: relative;
+  margin-bottom: 30px;
+
+  &:not(:last-of-type) {
+    @include media-breakpoint-up(lg) {
+      margin-right: rem(100);
+    }
+    &:after {
+      content: "или";
+      position: absolute;
+
+      top: 50%;
+      right: rem(-63);
+      margin-top: -4px;
+      // Style for "или"
+      color: $head;
+      font-size: 16px;
+      font-weight: 400;
+
+      width: 24px;
+      height: 8px;
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+    }
+  }
+}
+.order-item__img {
+  display: inline-block;
+  margin-left: rem(18);
+  margin-right: rem(24);
+  margin-top: -10px;
+}
+.order-item__text {
+  // Style for "Оплата бон"
+  color: #047030;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.24;
+  font-family: $PTSerif;
+
+  // Text style for "О, плата б"
+  letter-spacing: -0.17px;
+  // Text style for "баллами"
+
+  span {
+    letter-spacing: -0.17px;
+    text-transform: uppercase;
+  }
+
+}
+.im-teble {
+  margin-top: 15px;
+  background: white;
+  border-collapse: collapse;
+  width: 100%;
+  overflow-x: auto;
+  display: block;
+  td {
+    border: 1px solid #dcd9d9;
+    padding: 10px;
+    color: $head;
+  }
+  tr:nth-child(1) {
+    td {
+      color: #047030 !important;
+      font-size: 14px;
+      font-weight: 400;
+      font-family: $PTSerif;
+    }
+    td:nth-child(1) {
+      font-weight: 700;
+
+    }
+    td:nth-child(3) {
+      font-weight: 700;
+    }
+    td:nth-child(4) {
+      //font-weight: 700;
+    }
+  }
+  td:nth-child(1) {
+    background: rgba(#ffe40d, 0.66);
+    text-align: center;
+    font-weight: 700;
+  }
+   td:nth-child(3) {
+    background-color: #c0edbb;
+    font-weight: 700;
+  }
+  td:nth-child(4) {
+    font-weight: 700;
+  }
+}
+.l-green__more  {
+  // Style for "Подробнее"
+  color: $gray1;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: underline;
+  display: block;
+  margin: 15px 0;
+
+}
+.l-green__title2 {
+  color: #047030;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.24;
+  font-family: $PTSerif;
+  letter-spacing: -0.17px;
+
+
+}
+.custom {
+  list-style: none;
+  padding-left: 0;
+  li {
+    position: relative;
+    padding-left: rem(60);
+    margin-bottom: 10px;
+
+    // Style for "Вы ознаком"
+    color: $text;
+    font-size: 15px;
+    font-weight: 400;
+
+
+    &:before {
+      content: "";
+      display: inline-block;
+      vertical-align: top;
+      width: rem(20);
+      height: rem(15);
+      background-image: url(../images/check.png);
+      background-size: cover;
+      margin-right: rem(13);
+      flex-shrink: 0;
+      position: absolute;
+      top: 2px;
+      left: rem(25);
+    }
+
+  }
+}
+.blue {
+  // Text style for "www.moneta"
+  color: #138add;
+}
+.num-list {
+  @include media-breakpoint-up(md) {
+    padding-left: rem(50);
+  }
+}
+p > b {
+  color: $head;
+}
+.percent-modal {
+  @include media-breakpoint-up(md) {
+    background-image: url(../images/percent.png);
+    background-repeat: no-repeat;
+    background-position: rem(19) rem(17);
+  }
+
+}
+.ball-modal {
+  @include media-breakpoint-up(md) {
+    background-image: url(../images/coin.png);
+    background-repeat: no-repeat;
+    background-position: rem(15) rem(10);
+  }
+}
+.percent-modal__title {
+  @include media-breakpoint-up(md) {
+    margin-left: rem(112);
+    padding-left: 0;
+    text-align: left;
+  }
+}
+.percent-modal__title {
+  @include media-breakpoint-up(md) {
+    margin-left: rem(100);
+    padding-left: 0;
+  }
+}
+.modal-xx {
+  max-width: 1145px;
+}
+.usl-group {
+  margin-bottom: 15px;
+}
+.usl-group__title {
+  .modal-title {
+    display: inline;
+    padding: 0;
+  }
+}
+.usl-group__more {
+  // Style for "Подробнее"
+  color: $gray1;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: underline;
+  margin-left: 5px;
+
+}
+.usl-group__hidden {
+  display: none;
+}
+.usl-group__hide {
+  @extend .usl-group__more;
+  margin-left: 40px;
+  margin-top: -30px;
+  display: block;
+}
+.scroll-pane
+{
+  width: 100%;
+  height: 200px;
+  overflow: auto;
+}
+.l-green__title2--big {
+  font-size: 23px;
+  margin-top: 30px;
+}

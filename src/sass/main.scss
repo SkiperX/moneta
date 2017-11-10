@@ -1,0 +1,43 @@
+/*! Vendor */
+
+//@import "../template/vendor/jQuery-picZoomer/css/jquery-picZoomer.css";
+@import "vendor/bootstrap/bootstrap";
+@import "vendor/slick/slick";
+@import "vendor/slick/slick-theme";
+//@import "vendor/range-slider/bootstrap-slider";
+@import "vendor/jQueryFormStyler/jquery.formstyler";
+@import "vendor/xzoom/xzoom";
+@import "vendor/fancy/jquery.fancybox";
+@import "vendor/jscrollpane/jquery.jscrollpane";
+//@import "../../bower_components/lightgallery/dist/css/lightgallery";
+
+/*! Base */
+@import "base/variables";
+@import "base/icons";
+//@import "base/breakpoints";
+@import "base/fonts";
+@import "png-sprite";
+@import "base/base";
+@import "base/type";
+@import "base/form";
+@import "base/top-catalog";
+@import "helpers/bitrix-catalog";
+/*! Main / Layouts */
+@import "main/header";
+
+@import "main/footer";
+@import "main/bread";
+
+@import "pages/home";
+@import "pages/lk";
+@import "pages/filter";
+@import "pages/catalog";
+@import "pages/idea";
+@import "pages/cart";
+@import "pages/product";
+@import "pages/order";
+@import "pages/wholesale";
+@import "pages/cantacts";
+@import "pages/manufacturers";
+@import "pages/im";
+@import "pages/comparison";

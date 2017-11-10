@@ -1,0 +1,253 @@
+.container.container--catalog
+    a(href="").green-str-btn.catalog__top-btn Назад в Монеты
+    .h1 Альбомы для монет и банкнот
+        span  (найдено 1836 товаров)
+    .row.js-stycky__container
+        // колонка с фильтром
+        .col-md-12.col-lg-3.col-xx-auto.js-stycky.filter-col
+            include includes/filter.pug
+            a(href="").green-str-btn.green-str-btn--big.filter__back-btn.mt-5 Назад в Монеты
+        // колонка с фильтром конец
+        // центральная колонка
+        .col-md-12.col-lg-9.catalog-col
+            .catalog-category
+                .row
+                    .col-6.col-md-3.col-xl-2
+                        a.cat-cart-mini(style="background-image: url(images/s1.jpg)")
+                            .cat-cart-mini__text Альбомы для монет
+                    .col-6.col-md-3.col-xl-2
+                        a.cat-cart-mini(style="background-image: url(images/s1.jpg)")
+                            .cat-cart-mini__text Альбомы для монет
+
+            .catalog-list.line-list
+                .catalog-sort
+                    .row.align-items-center
+                        .col-12.col-sm-7
+                            .catalog-sort__select.b-label Сортировать по:
+
+                                select.styler.style-conf.width
+                                    option Сначало дорогие
+                                    option Сначало дешовые
+                                label.check-label
+                                    input.check-styled(type='checkbox', checked='')
+                                    span.check-label__text В наличии
+
+                        .col-md-5
+                            .filter-toggle.b-label
+                                | Показывать:
+                                a.filter-toggle__link.active(href="" title="Показать плитками")
+                                    +svg('cube')
+                                a.filter-toggle__link(href="" title="Показать списком")
+                                    +svg('list')
+                                a.filter-toggle__link(href="" title="Показать таблицей")
+                                    +svg('tabl')
+
+
+
+                        .col-12.col-sm-6.hidden-lg-up.text-right
+                            .mobile-filter Фильтры
+                                i.sprite.icon-controls
+                .product-card.line-card
+                    .row
+                        .col-md-3.line-card__img
+                            .flip-icon(title="Перевернуть монету")
+                                +svg('refresh')
+                            .sale-icon.line-card__bals.line-card__bals--right -30%
+                            .flip-container
+                                .creation
+                                    .front
+                                        img.xzoom(src='images/s1.jpg', xoriginal='images/b1.jpg')
+                                    .back
+                                        img.xzoom(src='images/s1.jpg', xoriginal='images/b1.jpg')
+
+                        .col-md-5.col-xl-6.line-card__center
+
+                            .cart-name 2 евро 2017 год Греция "60 лет Никос Казандзакис"
+
+                            .cart-desc 2 евро 2017 год Греция "60 лет Никос Казандзакис"
+                            .cart-status.status-red Нет в наличии
+
+                            .xzoom-thumbs
+                                a(href='images/b1.jpg')
+                                    img.xzoom-gallery( src='images/m1.jpg', xpreview='images/b1.jpg')
+                                a(href='images/b1.jpg')
+                                    img.xzoom-gallery( src='images/m2.jpg', xpreview='images/b1.jpg')
+                                a(href='images/b1.jpg')
+                                    img.xzoom-gallery( src='images/m3.jpg', xpreview='images/b1.jpg')
+
+
+                        .col-md-4.col-xl-3.line-card__right
+
+                            .price.rub2 120
+                            .line-card__icons
+                                a(href="").cart-icon.cart-star.active
+                                    +svg('star')
+                                a(href="").cart-icon.cart-star.active
+                                    +svg('libra_line')
+                            .line-card__controls
+                                a(href="").btn.btn-yellow2 Подробнее
+                                a(href="").btn.btn-green.buy-btn
+                                    +svg('empty_cart')
+
+                .product-card.line-card
+
+                    .row
+                        .col-md-3.line-card__img
+                            .new-icon.line-card__bals Новинка
+
+                            .flip-icon(title="Перевернуть монету")
+                                +svg('refresh')
+                            .flip-container
+                                .creation
+                                    .front
+                                        img.xzoom(src='images/s1.jpg', xoriginal='images/b1.jpg')
+                                    .back
+                                        img.xzoom(src='images/s1.jpg', xoriginal='images/b1.jpg')
+                            .img-cont.line-card__img-cont
+
+
+                        .col-md-5.col-xl-6.line-card__center
+
+                            .cart-name 2 евро 2017 год Греция "60 лет Никос Казандзакис"
+
+                            .cart-desc 2 евро 2017 год Греция "60 лет Никос Казандзакис"
+                            .cart-status.status-green
+                                +svg('check')
+                                | В наличии
+
+                            .xzoom-thumbs
+                                a(href='images/b1.jpg')
+                                    img.xzoom-gallery(width='40', src='images/m1.jpg', xpreview='images/b1.jpg')
+                                a(href='images/b1.jpg')
+                                    img.xzoom-gallery(width='40', src='images/m2.jpg', xpreview='images/b1.jpg')
+                                a(href='images/b1.jpg')
+                                    img.xzoom-gallery(width='40', src='images/m3.jpg', xpreview='images/b1.jpg')
+
+
+                        .col-md-4.col-xl-3.line-card__right
+
+                            .price.rub2 120
+                            .line-card__icons
+                                a(href="").cart-icon.cart-star.active
+                                    +svg('star')
+                                a(href="").cart-icon.cart-star.active
+                                    +svg('libra_line')
+                            .line-card__controls
+                                a(href="").btn.btn-yellow2 Подробнее
+                                a(href="").btn.btn-green.buy-btn
+                                    +svg('empty_cart')
+
+
+
+                .product-card.line-card
+                    .row
+                        .col-md-3.line-card__img
+                            .flip-icon(title="Перевернуть монету")
+                                +svg('refresh')
+                            .hit-icon.line-card__bals Хит
+                            .flip-container
+                                .creation
+                                    .front
+                                        img.xzoom(src='images/s1.jpg', xoriginal='images/b1.jpg')
+                                    .back
+                                        img.xzoom(src='images/s1.jpg', xoriginal='images/b1.jpg')
+
+                        .col-md-5.col-xl-6.line-card__center
+
+                            .cart-name 2 евро 2017 год Греция "60 лет Никос Казандзакис"
+
+                            .cart-desc 2 евро 2017 год Греция "60 лет Никос Казандзакис"
+                            .cart-status.status-green
+                                +svg('check')
+                                | В наличии
+
+                            .xzoom-thumbs
+
+                                a(href='images/b1.jpg')
+                                    img.xzoom-gallery(width='40', src='images/m1.jpg', xpreview='images/b1.jpg')
+                                a(href='images/b1.jpg')
+                                    img.xzoom-gallery(width='40', src='images/m2.jpg', xpreview='images/b1.jpg')
+                                a(href='images/b1.jpg')
+                                    img.xzoom-gallery(width='40', src='images/m3.jpg', xpreview='images/b1.jpg')
+
+
+                        .col-md-4.col-xl-3.line-card__right
+
+                            .price.rub2 120
+                            .line-card__icons
+                                a(href="").cart-icon.cart-star.active
+                                    +svg('star')
+                                a(href="").cart-icon.cart-star.active
+                                    +svg('libra_line')
+                            .line-card__controls
+                                a(href="").btn.btn-yellow2 Подробнее
+                                a(href="").btn.btn-green.buy-btn
+                                    +svg('empty_cart')
+
+                .product-card.line-card
+                    .row
+                        .col-md-3.line-card__img
+                            .balls.line-card__bals 12 баллов
+
+                            .flip-icon(title="Перевернуть монету")
+                                +svg('refresh')
+                            .flip-container
+                                .creation
+                                    .front
+                                        img.xzoom(src='images/s1.jpg', xoriginal='images/b1.jpg')
+                                    .back
+                                        img.xzoom(src='images/s1.jpg', xoriginal='images/b1.jpg')
+                            .img-cont.line-card__img-cont
+
+
+                        .col-md-5.col-xl-6.line-card__center
+
+                            .cart-name 2 евро 2017 год Греция "60 лет Никос Казандзакис"
+
+                            .cart-desc 2 евро 2017 год Греция "60 лет Никос Казандзакис"
+                            .cart-status.status-green
+                                +svg('check')
+                                | В наличии
+
+                            .xzoom-thumbs
+                                a(href='images/b1.jpg')
+                                    img.xzoom-gallery(width='40', src='images/m1.jpg', xpreview='images/b1.jpg')
+                                a(href='images/b1.jpg')
+                                    img.xzoom-gallery(width='40', src='images/m2.jpg', xpreview='images/b1.jpg')
+                                a(href='images/b1.jpg')
+                                    img.xzoom-gallery(width='40', src='images/m3.jpg', xpreview='images/b1.jpg')
+
+
+                        .col-md-4.col-xl-3.line-card__right
+
+                            .price.rub2 120
+                            .line-card__icons
+                                a(href="").cart-icon.cart-star.active
+                                    +svg('star')
+                                a(href="").cart-icon.cart-star.active
+                                    +svg('libra_line')
+                            .line-card__controls
+                                a(href="").btn.btn-yellow2 Подробнее
+                                a(href="").btn.btn-green.buy-btn
+                                    +svg('empty_cart')
+
+                // список товаров конец
+                .catalog__controls
+                    .row.align-items-center
+                        .col-12.col-sm-4
+                            .catalog-sort__select.b-label Показывать по:
+
+                                select.styler.style-conf
+                                    option 50
+                                    option 100
+                                    option все
+                        .col-12.col-sm-4.text-center
+                            a(href='').btn.btn-yellow.catalog__show-more показать еще
+
+
+section.seotext
+    .container
+        .h2 Альбомы для монет и банкнот
+        p Альбомы не только надежно защищают Ваши коллекции, но и позволяют их наглядно представлять. Все принадлежности оптимально подобраны для длительного хранения Ваших коллекционных материалов. Весь представленный товар есть в наших магазинах в Екатеринбурге, и Вы можете приехать и посмотреть товар. Отличная серия коллекционных альбомов, украсит Вашу книжную библиотеку. Послужит не заменимым подарком, как профессионалу, так и любителю. Здесь Вы можете купить альбом для монет, а именно альбомы для монет 10 рублей. Весь представленный товар есть в наших магазинах в Екатеринбурге, и Вы можете приехать и предварительно посмотреть товар.
+
+include includes/last-seen.pug

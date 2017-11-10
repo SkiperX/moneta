@@ -1,0 +1,234 @@
+.lk-items {
+
+}
+.lk-item {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: rem(100);
+  margin-bottom: 30px;
+  @include media-breakpoint-down(sm){
+    margin-right: 0;
+  }
+}
+.lk-item__title {
+  // Style for "Накопленны"
+  color: $head;
+  font-size: 19px;
+  font-weight: 700;
+  font-family: $PTSerif;
+
+  // Text style for "Н, акоплен"
+  letter-spacing: -0.19px;
+  // Text style for "455"
+
+  span {
+    color: #047030;
+    letter-spacing: -0.19px;
+  }
+}
+.lk-item__link {
+  @extend .green-link;
+
+}
+.lk-tabs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 5px;
+  overflow: hidden;
+  .nav-item {
+    display: block;
+  }
+  .nav-link {
+    display: block;
+    // Style for "подложка"
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    border: 1px solid #e6e6e6;
+    background-color: #dcd9d9;
+
+
+    // Style for "Персональн"
+    color: #3e3e3e;
+    font-size: 15px;
+    font-weight: 700;
+
+    font-family: $PTSerif;
+
+    padding: rem(20) rem(16);
+    text-align: left;
+    &:not(:last-child) {
+      margin-bottom: 2px;
+    }
+    &:not(.active):hover {
+      background: #d2d1d1;
+    }
+    &.active {
+      border: 1px solid #e6e6e6;
+    }
+
+  }
+}
+.lk-tablist {
+  margin-top: 30px;
+  .tab-pane {
+    border: none;
+    border-radius: 0;
+    padding: 0;
+  }
+}
+.history__select {
+  margin-bottom: 20px;
+}
+.history__list {
+  .order-group:not(.open) {
+    .order-group__body {
+      display: none;
+    }
+  }
+}
+.history__bals {
+  // Style for "Прямоуголь"
+  border-radius: 5px;
+  border: 4px solid $yellow2;
+  background-color: $yellow3;
+  padding: rem(32) rem(24);
+  margin-bottom: 15px;
+}
+.history__bals-item {
+  // Style for "Скидка:"
+  color: $head;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: $PTSerif;
+
+  // Text style for "Скидка:"
+  font-weight: 400;
+
+
+
+  span {
+    // Text style for "345"
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.11;
+  }
+}
+.history__summ {
+  margin-bottom: 15px;
+}
+.history__summ-item {
+  // Style for "К оплате:"
+  color: $head;
+  font-size: 17px;
+  font-weight: 700;
+  font-family: $PTSerif;
+
+
+
+  span {
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+.history__list {
+  .order-group__head {
+    // Style for "Заказ №342"
+    color: #3a5605;
+    font-size: 19px;
+    font-weight: 400;
+    font-family: $PTSerif;
+
+    // Text style for "Заказ №342"
+    font-weight: 700;
+    // Text style for "т 12.08.20"
+
+    span {
+      font-weight: 400;
+    }
+  }
+  .shopping-cart {
+    padding: 0;
+  }
+}
+.history__bottom {
+  padding: 0 15px;
+  margin-top: 20px;
+}
+.subscription__text {
+  // Style for "Подпишитес"
+  color: $head;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  margin-bottom: 15px;
+}
+.subscription__form {
+  .spdn {
+    margin-left: 40px;
+    @include media-breakpoint-down(sm) {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
+}
+.new-user {
+  @include media-breakpoint-up(xl) {
+    .col-xl-2 {
+      .flex-label--order span {
+        min-width: auto;
+      }
+      .form-control {
+        width: rem(60);
+      }
+    }
+  }
+
+}
+.new-user__text {
+  // Style for "Для принят"
+  color: $text;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.19;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.new-user__title {
+  // Style for "Ваш адрес"
+  color: $head;
+  font-size: 19px;
+  font-weight: 700;
+  font-family: $PTSerif;
+  letter-spacing: -0.19px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.new-user__brn {
+  margin-top: 20px;
+}
+.new-user__usl {
+  // Style for "Нажимая кн"
+  color: $gray1;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.42;
+  margin-top: 35px;
+}
+.modal {
+  .flex-label--order {
+    max-width: none;
+  }
+}
+.lk-row {
+  margin-bottom: 30px;
+  @include media-breakpoint-down(lg) {
+    flex-direction: column-reverse;
+  }
+}
+.lk-rigrh {
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 30px;
+  }
+}

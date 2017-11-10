@@ -1,0 +1,389 @@
+header.header.stycky-wrap
+    .top-line
+        .container
+            .row.align-items-center
+                .col-6.col-lg-2
+                    select.styler
+                        option Русский
+                        option English
+                        option Deutsch
+
+                .col-lg-8.top-line__nemu
+
+                    ul.light-nav
+                        li.light-nav__item
+                          a(href="") О компании
+
+                        li.light-nav__item
+                          a(href="") Интернет-магазин
+
+                        li.light-nav__item
+                          a(href="") Оплата и доставка
+
+                        li.light-nav__item
+                          a(href="") Услуги
+
+                        li.light-nav__item
+                          a(href="") Производители
+                        li.light-nav__item
+                          a(href="") Для оптовых покупателей
+
+
+
+
+                .col-6.col-lg-2.text-lg-right
+                    a.header-login(href="")
+                        +svg('key')
+                        span Личный кабинет
+                .col-sm-12.hidden-md-up
+                    .gamburger.gamburger--menu.hidden-md-up(data-toggle=".top-line__nemu")
+                        <span class="gamburger-line1"></span>
+                        <span class="gamburger-line2"></span>
+                        <span class="gamburger-line3"></span>
+    .header__section
+        .container
+            .row.align-items-center.justify-content-between
+                .col-md-6.col-lg-3.text-center
+                    .header-call
+                        +svg('phone_full')
+                        div
+                            a(href="tel:+73433615727").light-nav__tel +7(343)
+                                span  361 57 27
+                            a(href="tel:+79221815727").light-nav__tel +7(922)
+                                span  181 57 27
+                            a(href="").light-nav__callme Контакты
+                .col-md-12.col-lg-6.text-center.header__logo
+                    a(href="/").logo
+                        img(src="images/logo.png").logo-img
+
+
+                .col-md-5.col-lg-3
+                    .header__icons
+                        a.header-icon(href="#")
+                            +svg('star')
+                            .icon__num 3
+                        a.header-icon(href="#")
+                            +svg('libra_line')
+
+                        a.header-cart(href="#")
+                            .header-icon
+                                +svg('full_cart')
+                                .icon__num 12
+                            .header-cart__summ 112 350
+    .cat-toggler.hidden-md-up
+        .container
+            .row.align-items-center.no-gutters
+                .col-xs-auto
+                    .gamburger.hidden-md-up(data-toggle=".top-menu")
+                        <span class="gamburger-line1"></span>
+                        <span class="gamburger-line2"></span>
+                        <span class="gamburger-line3"></span>
+                .col-xs-auto
+                    .cat-gamburger__text Категории
+    .top-menu
+        .container
+            ul.cat-nav
+                li.cat-nav__item
+                    a.cat-nav__link(href="") Аксессуары
+
+                    .sidebar__item.top-catalog(onclick="")
+
+                        .catalog-carts
+                            .catalog-cart.catalog-cart--hover
+                                a.catalog-cart__img-cont(href='/categories/komplekty/')
+                                    img.catalog-cart__img(src='images/c1.jpg')
+
+                                a.catalog-cart__name(href='/categories/komplekty/')
+                                    | Альбомы для монет
+                                    | и банкнот
+                                    span  (283)
+
+                            .catalog-cart.catalog-cart--hover
+                                a.catalog-cart__img-cont(href='/categories/rannee-razvitie-1-5-3-goda-/')
+                                    img.catalog-cart__img(src='images/c2.jpg')
+
+                                a.catalog-cart__name(href='/categories/rannee-razvitie-1-5-3-goda-/')
+                                    | Кейсы /
+                                    | Планшеты
+                                    span  (25)
+
+                            .catalog-cart.catalog-cart--hover
+                                a.catalog-cart__img-cont(href='/categories/doshkolnoe-razvitie-3-6-let/')
+                                    img.catalog-cart__img(src='images/c3.jpg')
+
+                                a.catalog-cart__name(href='/categories/doshkolnoe-razvitie-3-6-let/')
+                                    | Кофры /
+                                    | Боксы для монет
+                                    span  (45)
+                            .catalog-cart.catalog-cart--hover
+                                a.catalog-cart__img-cont(href='/categories/dou-i-nachalnaya-shkola/')
+                                    img.catalog-cart__img(src='images/c4.jpg')
+
+                                a.catalog-cart__name(href='/categories/dou-i-nachalnaya-shkola/')
+                                    | Коробки
+                                    | для монет
+                                    span  (39)
+
+                            .catalog-cart.catalog-cart--hover
+                                a.catalog-cart__img-cont(href='/categories/srednyaya-shkola-10-/')
+                                    img.catalog-cart__img(src='images/c5.jpg')
+
+                                a.catalog-cart__name(href='/categories/srednyaya-shkola-10-/')
+                                    | Пинцеты /
+                                    | Весы
+                                    span  (17)
+
+                            .catalog-cart.catalog-cart--hover
+                                a.catalog-cart__img-cont(href='/categories/starshaya-shkola/')
+                                    img.catalog-cart__img(src='images/c6.jpg')
+
+                                a.catalog-cart__name(href='/categories/starshaya-shkola/')
+                                    | Лупы
+                                    span  (52)
+                            .catalog-cart.catalog-cart--hover
+                                a.catalog-cart__img-cont(href='/categories/dopzanyatiya-dlya-wedo-i-ev3/')
+                                    img.catalog-cart__img(src='images/c7.jpg')
+
+                                a.catalog-cart__name(href='/categories/dopzanyatiya-dlya-wedo-i-ev3/')
+                                    | Холдеры
+                                    | для монет
+                                    span  (74)
+
+                            .catalog-cart.catalog-cart--hover
+                                a.catalog-cart__img-cont(href='/categories/polya-dlya-robotov/')
+                                    img.catalog-cart__img(src='images/c8.jpg')
+
+                                a.catalog-cart__name(href='/categories/polya-dlya-robotov/')
+                                    | Капсулы
+                                    | для монет
+                                    span  (87)
+
+                        .catalog-carts.carts2
+                            .catalog-cart.catalog-cart--hover
+                                a.catalog-cart__img-cont(href='/categories/zapasnye-chasti-i-komplektuyushchie/')
+                                    img.catalog-cart__img(src='images/c9.jpg')
+
+                                a.catalog-cart__name(href='/categories/zapasnye-chasti-i-komplektuyushchie/')
+                                    | Средства
+                                    | для чистки
+                                    span  (18)
+
+                            .catalog-cart.catalog-cart--hover
+                                a.catalog-cart__img-cont(href='/categories/mebel-dlya-lego-new/')
+                                    img.catalog-cart__img(src='images/c10.jpg')
+
+                                a.catalog-cart__name(href='/categories/mebel-dlya-lego-new/')
+                                    | Альбомы
+                                    | для марок
+                                    span  (18)
+
+
+
+
+                            .catalog-cart.catalog-cart--hover
+                                a.catalog-cart__img-cont(href='/categories/starshaya-shkola/')
+                                    img.catalog-cart__img(src='images/c11.jpg')
+
+                                a.catalog-cart__name(href='/categories/starshaya-shkola/')
+                                    | Интерьерные
+                                    | рамки
+                                    span  (21)
+
+
+                            .catalog-cart.catalog-cart--hover
+                                a.catalog-cart__img-cont(href='/categories/dopzanyatiya-dlya-wedo-i-ev3/')
+                                    img.catalog-cart__img(src='images/c12.jpg')
+
+                                a.catalog-cart__name(href='/categories/dopzanyatiya-dlya-wedo-i-ev3/')
+                                    | Для медалей
+                                    | и наград
+                                    span  (34)
+
+                            .catalog-cart.catalog-cart--hover
+                                a.catalog-cart__img-cont(href='/categories/polya-dlya-robotov/')
+                                    img.catalog-cart__img(src='images/c13.jpg')
+
+                                a.catalog-cart__name(href='/categories/polya-dlya-robotov/')
+                                    | Литература
+                                    span  (22)
+
+                            .catalog-cart.catalog-cart--hover
+                                a.catalog-cart__img-cont(href='/categories/zapasnye-chasti-i-komplektuyushchie/')
+                                    img.catalog-cart__img(src='images/c14.jpg')
+
+                                a.catalog-cart__name(href='/categories/zapasnye-chasti-i-komplektuyushchie/')
+                                    | Альбомы для
+                                    | открыток
+                                    | и конвертов
+                                    span  (46)
+
+                            .catalog-cart.catalog-cart--hover
+                                a.catalog-cart__img-cont(href='/categories/mebel-dlya-lego-new/')
+                                    img.catalog-cart__img(src='images/c15.jpg')
+
+                                a.catalog-cart__name(href='/categories/mebel-dlya-lego-new/')
+                                    | Разное
+                                    span  (43)
+
+                        a.top-catalog__close
+                            span Свернуть
+
+                li.cat-nav__item
+                    a.cat-nav__link(href="") Коллекции
+                    .sidebar__item.top-catalog(onclick="")
+
+                        .catalog-carts
+                            .catalog-cart.catalog-cart--hover.catalog-cart--grow
+                                a.catalog-cart__img-cont(href='/categories/komplekty/')
+                                    img.catalog-cart__img(src='images/cat1.jpg')
+
+                                a.catalog-cart__name(href='/categories/komplekty/')
+                                    | Монеты
+                                    span  (283)
+
+                            .catalog-cart.catalog-cart--hover.catalog-cart--grow
+                                a.catalog-cart__img-cont(href='/categories/rannee-razvitie-1-5-3-goda-/')
+                                    img.catalog-cart__img(src='images/cat2.jpg')
+
+                                a.catalog-cart__name(href='/categories/rannee-razvitie-1-5-3-goda-/')
+                                    | Марки
+                                    span  (25)
+                            .catalog-cart.catalog-cart--hover.catalog-cart--grow
+                                a.catalog-cart__img-cont(href='/categories/komplekty/')
+                                    img.catalog-cart__img(src='images/cat3.jpg')
+
+                                a.catalog-cart__name(href='/categories/komplekty/')
+                                    | Банкноты
+                                    span  (45)
+
+                            .catalog-cart.catalog-cart--hover.catalog-cart--grow
+                                a.catalog-cart__img-cont(href='/categories/rannee-razvitie-1-5-3-goda-/')
+                                    img.catalog-cart__img(src='images/cat4.jpg')
+
+                                a.catalog-cart__name(href='/categories/rannee-razvitie-1-5-3-goda-/')
+                                    | Киндер сюрпризы
+                                    span  (39)
+                        a.top-catalog__close
+                            span Свернуть
+
+
+
+
+
+                li.cat-nav__item
+                    a.cat-nav__link(href="") Идеи для подарка
+            .header-search
+                .header-search__line
+                    .loop-icon.js-toggle-search
+                        +svg('search')
+                    .search-hidden
+                        form.search-form
+                            input(type="text" autofocus="true").search-input
+                            button(type="submit").search-btn Найти
+                        .js-toggle-search
+                            +svg('cross')
+                .header-search__result
+                    .result-line
+                        .img-cont.search-ing-cont
+                            img(src="images/r1.jpg" alt="")
+                            .sale-icon.card__bals--right -30%
+                        .result-line__name
+                            .search-name Альбом для 143 монет Numis Classic в шубере <span class="yellow">2017</span>
+                            .product-desc 2017 г. Сплав : сталь с никелевым покрытием Transnistrian...
+                        .result-line__price
+                            .search-price.rub2 120
+                        .result-line__controls
+                            a(href="").btn.btn-yellow2 Подробнее
+                            a(href="").btn.btn-green.buy-btn
+                                +svg('empty_cart')
+                    .result-line
+                        .img-cont.search-ing-cont
+                            img(src="images/r2.jpg" alt="")
+                        .result-line__name
+                            .search-name 1 рубль Приднестровье <span class="yellow">2017</span> год "25 лет Бендерской трагедии"
+                            .product-desc 2017 г. Сплав : сталь с никелевым покрытием Transnistrian...
+                        .result-line__price
+                            .search-price.rub2 120
+                        .result-line__controls
+                            a(href="").btn.btn-yellow2 Подробнее
+                            a(href="").btn.btn-green.buy-btn
+                                +svg('empty_cart')
+                    .result-line
+                        .img-cont.search-ing-cont
+                            img(src="images/r3.jpg" alt="")
+                        .result-line__name
+                            .search-name 2 евро <span class="yellow">2017</span> год Греция "60 лет Никос Казандзакис"
+                            .product-desc 2 евро 2017 год Греция "60 лет Никос Казандзакис"
+                        .result-line__price
+                            .old-price.rub2 120
+                            .search-price.rub2 120
+                        .result-line__controls
+                            a(href="").btn.btn-yellow2 Подробнее
+                            a(href="").btn.btn-green.buy-btn
+                                +svg('empty_cart')
+                    .result-line
+                        .img-cont.search-ing-cont
+                            img(src="images/r4.jpg" alt="")
+                        .result-line__name
+                            .search-name 1 рубль Приднестровье <span class="yellow">2017</span>  год "25 лет Бендерской трагедии" серебряная
+                            .product-desc 2017 г. Сплав : сталь с никелевым покрытием Transnistrian ..
+                            .text-red Нет в наличии
+                        .result-line__price
+                            .search-price.rub2 120
+                        .result-line__controls
+                            a(href="").btn.btn-yellow2 Подробнее
+                            a(href="").btn.btn-green.buy-btn
+                                +svg('empty_cart')
+
+
+// хедер конец
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
